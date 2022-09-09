@@ -13,6 +13,22 @@
     
 }
 
+.nav-link {
+    border-left: 1px solid rgb(190, 180, 180);
+}
+
+.nav-item a:hover {
+    text-shadow: 0 0 25px white, 0 0 50px white, 0 0 100px white;
+    transition: 1s; 
+}
+
+.white-glow a:hover {
+    text-shadow: 0 0 25px white, 0 0 50px white, 0 0 100px white;
+    box-shadow: 0 0 15px rgb(154, 215, 240), 0 0 25px rgb(10, 171, 235), 0 0 50px rgb(5, 44, 94); 
+    transition: 0.5s;
+}
+
+
 .hero {
     background-image: url("./assets/img/playas/mar\ del\ plata/mardelplatagrande.jpg");
     height: 85vh;
@@ -22,12 +38,22 @@
 }
 
 .hero h2 {
-    font-size: 68px;
+    font-size: 86px;
+    
+    
+}
+
+#viajarg_h2 {
+    text-shadow: 2px white;
+    -webkit-text-stroke: 1px rgb(241, 233, 233);
+    color: transparent; 
+    
     
 }
 
 #paquetes_title {
     font-size: 78px;
+    text-shadow: 2px 2px rgb(199, 190, 190);
     
 }
 
@@ -55,7 +81,7 @@
 }
 
 .carousel .carousel-item {
-    height: 600px;
+    height: 500px;
   }
   
 .carousel-item img {
