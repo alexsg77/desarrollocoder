@@ -127,17 +127,14 @@ body {
 
 #gmap_canvas {
     height: 40vh;
-    width: 28vw;
+    width: 20vw;
 }
 
 
 @media (max-width: 850px) {
     .about-container {
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-        
-        
+        display: block;
+               
         
 
     }
