@@ -10,7 +10,7 @@
 
 #navbar2 {
     background: rgb(0,212,255);
-background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(9,9,121,1) 29%, rgba(2,0,36,1) 100%);
+    background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(9,9,121,1) 29%, rgba(2,0,36,1) 100%);
 }
 
 
@@ -140,6 +140,12 @@ body {
 }
 
 
+@media (max-width: 768px) {
+    #navbar2 {
+        background: rgb(0,116,255);
+        background: linear-gradient(90deg, rgba(0,116,255,1) 31%, rgba(9,9,121,1) 63%, rgba(2,0,36,1) 93%);
+    }
+}
 
 
 
