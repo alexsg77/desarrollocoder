@@ -78,7 +78,7 @@ body {
   transition: 0.5s; }
 
 .hero {
-  background-image: url("/assets/img/playas/mar del plata/mardelplatagrande.jpg");
+  background-image: url("../assets/img/playas/mar del plata/mardelplatagrande.jpg");
   height: 85vh;
   box-shadow: 10px 5px 5px grey; }
   .hero h2 {
