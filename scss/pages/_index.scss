@@ -1,0 +1,63 @@
+.carousel {
+    border: 5px solid black;
+
+    &-item {
+        height: 500px;
+
+
+        & img {
+            position: absolute;
+            object-fit:cover;
+            top: 0;
+            left: 0;
+            min-height: 500px;
+
+        }
+    }
+}
+
+// .carousel .carousel-item {
+//     height: 500px;
+//   }
+  
+// .carousel-item img {
+//     position: absolute;
+//     object-fit:cover;
+//     top: 0;
+//     left: 0;
+//     min-height: 500px;
+// }
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  width: 5vw;
+  height: 5vw;
+}
+
+
+.white-glow a:hover {
+    text-shadow: 0 0 25px white, 0 0 50px white, 0 0 100px white;
+    box-shadow: 0 0 15px rgb(154, 215, 240), 0 0 25px rgb(10, 171, 235), 0 0 50px rgb(5, 44, 94); 
+    transition: 0.5s;
+}
+
+
+.hero {
+    background-image: url("/assets/img/playas/mar\ del\ plata/mardelplatagrande.jpg");
+    height: 85vh;
+    box-shadow: 10px 5px 5px grey;
+    
+    & h2 {
+        font-size: 86px;
+    }
+    
+}
+
+
+#viajarg_h2 {
+    text-shadow: 2px white;
+    -webkit-text-stroke: 1px rgb(241, 233, 233);
+    color: transparent; 
+    
+    
+}
