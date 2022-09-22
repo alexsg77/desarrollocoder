@@ -39,6 +39,57 @@ body {
   width: 64px;
   margin: auto; }
 
+.fa-facebook, .fa-instagram, .fa-whatsapp {
+  width: 60px;
+  border-radius: 5px; }
+  .fa-facebook:hover, .fa-instagram:hover, .fa-whatsapp:hover {
+    -webkit-animation: wobble-hor-bottom .8s both;
+    animation: wobble-hor-bottom .8s both; }
+
+@-webkit-keyframes wobble-hor-bottom {
+  0%, 100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%; }
+  15% {
+    -webkit-transform: translateX(-30px) rotate(-6deg);
+    transform: translateX(-30px) rotate(-6deg); }
+  30% {
+    -webkit-transform: translateX(15px) rotate(6deg);
+    transform: translateX(15px) rotate(6deg); }
+  45% {
+    -webkit-transform: translateX(-15px) rotate(-3.6deg);
+    transform: translateX(-15px) rotate(-3.6deg); }
+  60% {
+    -webkit-transform: translateX(9px) rotate(2.4deg);
+    transform: translateX(9px) rotate(2.4deg); }
+  75% {
+    -webkit-transform: translateX(-6px) rotate(-1.2deg);
+    transform: translateX(-6px) rotate(-1.2deg); } }
+
+@keyframes wobble-hor-bottom {
+  0%, 100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%; }
+  15% {
+    -webkit-transform: translateX(-30px) rotate(-6deg);
+    transform: translateX(-30px) rotate(-6deg); }
+  30% {
+    -webkit-transform: translateX(15px) rotate(6deg);
+    transform: translateX(15px) rotate(6deg); }
+  45% {
+    -webkit-transform: translateX(-15px) rotate(-3.6deg);
+    transform: translateX(-15px) rotate(-3.6deg); }
+  60% {
+    -webkit-transform: translateX(9px) rotate(2.4deg);
+    transform: translateX(9px) rotate(2.4deg); }
+  75% {
+    -webkit-transform: translateX(-6px) rotate(-1.2deg);
+    transform: translateX(-6px) rotate(-1.2deg); } }
+
 #navbar2 {
   background: #00d4ff;
   background: linear-gradient(90deg, #00d4ff 0%, #090979 29%, #020024 100%);
@@ -98,6 +149,30 @@ body {
     -webkit-transform-origin: 0 0;
     transform-origin: 0 0;
     opacity: 1; } }
+
+.foot {
+  display: flex;
+  justify-content: center;
+  background: #00d4ff;
+  background: linear-gradient(90deg, #00d4ff 0%, #090979 29%, #020024 100%);
+  color: white;
+  padding-block: 20px; }
+  .foot .icons {
+    display: flex;
+    align-items: center;
+    gap: 1rem; }
+
+.fa-facebook, .fa-instagram, .fa-whatsapp {
+  background-color: blue; }
+
+.fa-instagram {
+  background-color: #c78812; }
+
+.fa-whatsapp {
+  background-color: green; }
+
+.icons .fab {
+  padding: 1.5rem; }
 
 .carousel {
   border: 5px solid black; }
