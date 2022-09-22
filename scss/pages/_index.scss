@@ -46,9 +46,13 @@
     background-image: url("../assets/img/playas/mar\ del\ plata/mardelplatagrande.jpg");
     height: 85vh;
     box-shadow: 10px 5px 5px grey;
+    -webkit-animation:slide-in-right 1s cubic-bezier(.25,.46,.45,.94) both;
+    animation:slide-in-right 1s cubic-bezier(.25,.46,.45,.94) both;
     
     h2 {
         font-size: 86px;
+        -webkit-animation:slide-in-left 1s cubic-bezier(.25,.46,.45,.94) both;
+        animation:slide-in-left 3s cubic-bezier(.25,.46,.45,.94) both;
     }
     
 }
@@ -61,3 +65,13 @@
     
     
 }
+
+
+// keyframe de background hero
+@-webkit-keyframes slide-in-right{0%{-webkit-transform:translateX(1000px);transform:translateX(1000px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}
+@keyframes slide-in-right{0%{-webkit-transform:translateX(1000px);transform:translateX(1000px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}
+
+// keyframe de hero h2
+
+@-webkit-keyframes slide-in-left{0%{-webkit-transform:translateX(-1000px);transform:translateX(-1000px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}
+@keyframes slide-in-left{0%{-webkit-transform:translateX(-1000px);transform:translateX(-1000px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}
