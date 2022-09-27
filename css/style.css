@@ -7,27 +7,17 @@
 body {
   background-color: white; }
 
-.social-icons {
-  position: fixed;
-  bottom: 10px;
-  right: 50px; }
-  .social-icons img {
-    box-shadow: 10px 5px 5px black;
-    border-radius: 25px; }
-  .social-icons #nuestras-redes {
-    text-align: center;
-    margin-bottom: 3px;
-    color: black;
-    text-shadow: 1px 1px 2px white;
-    font-size: 16px;
-    font-weight: bold; }
+.img-fluid {
+  border-radius: 10px; }
 
 #paquetes_title {
   font-size: 78px;
   text-shadow: 2px 2px #c7bebe; }
 
 .card {
-  box-shadow: 10px 5px 5px grey; }
+  box-shadow: 10px 5px 5px grey;
+  -webkit-animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
   .card-img-top {
     width: 100%;
     height: 30vh;
@@ -38,6 +28,68 @@ body {
   height: 64px;
   width: 64px;
   margin: auto; }
+
+.btn {
+  --color: #0e86e9;
+  font-family: inherit;
+  line-height: 2.5em;
+  margin-top: 20px;
+  position: absolute;
+  overflow: hidden;
+  border: 2px solid var(--color);
+  transition: color .5s;
+  z-index: 1;
+  font-size: 17px;
+  border-radius: 6px;
+  font-weight: 500;
+  color: black;
+  top: 85%;
+  width: 90%; }
+
+.btn:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: var(--color);
+  height: 500px;
+  width: 500px;
+  border-radius: 50%; }
+
+.btn:hover {
+  color: #fff; }
+
+.btn:before {
+  top: 100%;
+  left: 100%;
+  transition: all .7s; }
+
+.btn:hover:before {
+  top: -70px;
+  left: -70px; }
+
+.btn:active:before {
+  background: #3a0ca3;
+  transition: background 0s; }
+
+@-webkit-keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1; }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1; } }
+
+@keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1; }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1; } }
 
 .fa-facebook, .fa-instagram, .fa-whatsapp {
   width: 60px;
@@ -166,13 +218,17 @@ body {
   background-color: blue; }
 
 .fa-instagram {
-  background-color: #c78812; }
+  background-color: #eba016; }
 
 .fa-whatsapp {
-  background-color: green; }
+  background-color: #0caf0c; }
+
+.fa-facebook, .fa-instagram, .fa-whatsapp {
+  color: white; }
 
 .icons .fab {
-  padding: 1.5rem; }
+  padding: 1.5rem;
+  text-decoration: none; }
 
 .carousel {
   border: 5px solid black; }
@@ -189,11 +245,6 @@ body {
 .carousel-control-prev-icon {
   width: 5vw;
   height: 5vw; }
-
-.white-glow a:hover {
-  text-shadow: 0 0 25px white, 0 0 50px white, 0 0 100px white;
-  box-shadow: 0 0 15px #9ad7f0, 0 0 25px #0aabeb, 0 0 50px #052c5e;
-  transition: 0.5s; }
 
 .hero {
   background-image: url("../assets/img/playas/mar del plata/mardelplatagrande.jpg");

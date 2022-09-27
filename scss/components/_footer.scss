@@ -19,8 +19,8 @@
 
 $redes: (
     facebook: blue,
-    instagram: rgb(199, 136, 18),
-    whatsapp: green
+    instagram: rgb(235, 160, 22),
+    whatsapp: rgb(12, 175, 12)
 );
 
 @each $redsocial, $colordered in $redes {
@@ -31,6 +31,8 @@ $redes: (
 
 .fa-facebook {
     @extend %iconitos;
+    color: white;
+    
 }
 
 .fa-instagram {
@@ -47,6 +49,7 @@ $redes: (
 
 .icons .fab {
     @include padding(1.5rem);
+    text-decoration: none;
 }
 
 // dejo el map get comentado ya que no lo encontre el uso que quiero todavia pero para cumplir con la consigna
