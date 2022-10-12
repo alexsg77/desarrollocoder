@@ -15,7 +15,7 @@
 
     @for $item from 1 through 5 {
         .nav-item#{$item} {
-            animation-delay: $item*0.30s;
+            animation-delay: $item*0.10s;
             }    
     }
 

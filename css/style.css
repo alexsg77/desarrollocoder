@@ -14,17 +14,13 @@ body {
   font-size: 78px;
   text-shadow: 2px 2px #c7bebe; }
 
-.md-4 {
-  margin-bottom: 50px;
-  height: 700px; }
-
 .card {
   box-shadow: 10px 5px 5px grey;
   -webkit-animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
   .card-img-top {
     width: 100%;
-    height: 30vh;
+    height: 200px;
     object-fit: cover; }
 
 .googlemapicon {
@@ -37,7 +33,7 @@ body {
   --color: #0e86e9;
   font-family: inherit;
   line-height: 2.5em;
-  position: absolute;
+  position: relative;
   overflow: hidden;
   border: 2px solid var(--color);
   transition: color .5s;
@@ -46,10 +42,8 @@ body {
   border-radius: 6px;
   font-weight: 500;
   color: black;
-  top: 80%;
   width: 90%;
-  margin-inline-start: 1px;
-  margin-inline-end: 1px; }
+  margin-inline: auto; }
 
 .btn:before {
   content: "";
@@ -75,29 +69,6 @@ body {
 .btn:active:before {
   background: #3a0ca3;
   transition: background 0s; }
-
-@media (max-width: 980px) {
-  .col-md-4 {
-    margin-bottom: 50px;
-    height: 600px; } }
-
-@media (max-width: 980px) {
-  .card-body {
-    margin-bottom: 50px; } }
-
-@media (max-width: 980px) {
-  .row {
-    display: block; } }
-
-@media (max-width: 980px) {
-  .col {
-    height: 600px;
-    margin-top: 20px;
-    margin-bottom: 20px; } }
-
-@media (max-width: 980px) {
-  .card-body {
-    margin-bottom: 50px; } }
 
 @-webkit-keyframes scale-in-center {
   0% {
@@ -180,19 +151,19 @@ body {
   animation: scale-in-hor-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
 
 .navbar-nav .nav-item1 {
-  animation-delay: 0.3s; }
+  animation-delay: 0.1s; }
 
 .navbar-nav .nav-item2 {
-  animation-delay: 0.6s; }
+  animation-delay: 0.2s; }
 
 .navbar-nav .nav-item3 {
-  animation-delay: 0.9s; }
+  animation-delay: 0.3s; }
 
 .navbar-nav .nav-item4 {
-  animation-delay: 1.2s; }
+  animation-delay: 0.4s; }
 
 .navbar-nav .nav-item5 {
-  animation-delay: 1.5s; }
+  animation-delay: 0.5s; }
 
 .nav-link {
   border-left: 1px solid #beb4b4; }
@@ -290,6 +261,14 @@ body {
   -webkit-text-stroke: 1px #f1e9e9;
   color: transparent; }
 
+@media (max-width: 768px) {
+  #viajarg_h2 {
+    font-size: 60px; } }
+
+@media (max-width: 768px) {
+  #paquetes_title {
+    font-size: 50px; } }
+
 @-webkit-keyframes slide-in-right {
   0% {
     -webkit-transform: translateX(1000px);
@@ -338,6 +317,10 @@ body {
   #gmap_canvas {
     width: 100%; } }
 
+@media (max-width: 768px) {
+  #jejox {
+    margin-bottom: 250px; } }
+
 @media (max-width: 390px) {
   #gmap_canvas {
     width: 100%; } }
@@ -345,6 +328,10 @@ body {
 @media (max-width: 980px) {
   .col {
     display: block; } }
+
+@media (max-width: 768px) {
+  #paquetes_title {
+    font-size: 50px; } }
 
 @media (max-width: 980px) {
   #jejox {
